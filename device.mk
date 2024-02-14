@@ -60,6 +60,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+
+# Apex
+TW_EXCLUDE_APEX := true
+
 # Boot HAL
 PRODUCT_PACKAGES += \
     bootctrl.sony_sm8250 \
