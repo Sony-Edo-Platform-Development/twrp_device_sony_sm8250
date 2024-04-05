@@ -34,7 +34,7 @@
 /spunvm                    vfat                /dev/block/bootdevice/by-name/spunvm                   flags=display="spunvm";backup=0;advbackup=1;fsflags="rw,noatime,shortname=lower,uid=1000,gid=1000,dmask=007,fmask=007,context=u:object_r:spunvm_file:s0 wait"
 
 # Removable storage
-/usb-otg         auto       /dev/block/sdd1        /dev/block/sdd       flags=display="USB OTG";storage;wipeingui;removable
+/usb_otg         auto       /dev/block/sdd1        /dev/block/sdd       flags=display="USB OTG";storage;wipeingui;removable
 /external_sd     auto       /dev/block/mmcblk0p1    /dev/block/mmcblk0  flags=display="Micro SD Card";storage;wipeingui;removable
 
 # Flashable logical partitions
