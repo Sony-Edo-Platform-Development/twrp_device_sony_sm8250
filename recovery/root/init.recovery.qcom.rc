@@ -41,6 +41,11 @@ on fs
     chown system system /dev/ion
     install_keyring
 
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ \
+    sec_touchscreen \
+    bu520x1nvx
+
 on init
     start vendor.qseecomd
     start boot-hal-1-1
@@ -49,8 +54,13 @@ on boot
     start health-hal-2-1
     setprop sys.usb.config adb
     start vendor.qti.vibrator
-    chmod 0777 /system/bin/unified-script.sh
-    start unified-script
+    write /sys/devices/virtual/sec/tsp/after_work 1
+    write /sys/module/sec_touchscreen/parameters/report_rejected_event 1
+    chown system system /sys/devices/virtual/sec/tsp/module_id
+    chmod 0600 /sys/devices/virtual/sec/tsp/module_id
+    chown system system /sys/devices/virtual/sec/tsp/cmd
+    chown system system /sys/devices/dsi_panel_driver/pre_sod_mode
+    chmod 0600 /sys/devices/virtual/sec/tsp/cmd
 
 on property:vendor.sys.listeners.registered=true
     start keymaster-4-0
@@ -60,13 +70,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
     user root
     group root
     disabled
-    seclabel u:r:recovery:s0
-
-service unified-script /system/bin/unified-script.sh
-    user root
-    group root
-    disabled
-    oneshot
     seclabel u:r:recovery:s0
 
 service keymaster-4-0 /vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
