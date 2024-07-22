@@ -1,8 +1,8 @@
-# TWRP device tree for Xperia 1II
+# TWRP device tree for Xperia 5II
 
-Xperia 1II (codenamed _"pdx203"_) is a high-end smartphone from Sony.
+Xperia 5II (codenamed _"pdx206"_) is a high-end smartphone from Sony.
 
-It was announced & released on February 2020.
+It was announced & released on October 2020.
 
 ## Device specifications
 
@@ -11,15 +11,15 @@ Basic   | Spec Sheet
 SoC     | Snapdragon® 865 (SM8250)
 CPU     | 1x2.84 GHz Cortex-A77 & 3x2.42 GHz Cortex-A77 & 4x1.8 GHz Cortex-A55
 GPU     | Adreno 650
-Memory  | 8/12 GB RAM
+Memory  | 8 GB RAM
 Shipped Android Version | 10.0
 Storage | 128/256 GB
 Battery | Li-Ion 4000 mAh, non-removable, graphene-enhanced
-Display | 1644 x 3840 pixels, 21:9 ratio (~642 ppi density), 6.50 inches, OLED, 60Hz, Dolby Vision, HDR10+
+Display | 1080 x 2520 pixels, 21:9 ratio (~449 ppi density), 6.10 inches, OLED, 120Hz, Dolby Vision, HDR10+
 
 ## Device picture
 
-![Xperia 1II](https://www.sony.com.hk/image/7723dbfd94d35c7e9b9b854576fbe90d?fmt=pjpeg&wid=2000&bgcolor=F1F5F9&bgc=F1F5F9&qlt=85)
+![Xperia 5II](https://www.sony.co.uk/image/0909aefcd268e5edef06813421bc98c7?fmt=pjpeg&wid=2000&bgcolor=F1F5F9&bgc=F1F5F9&qlt=85)
 
 ## Features
 

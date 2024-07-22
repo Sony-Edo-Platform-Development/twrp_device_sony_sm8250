@@ -15,8 +15,8 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := pdx203
-DEVICE_PATH := device/sony/pdx203
+PRODUCT_RELEASE_NAME := pdx206
+DEVICE_PATH := device/sony/pdx206
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
@@ -27,13 +27,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := pdx203
-PRODUCT_NAME := twrp_pdx203
+PRODUCT_DEVICE := pdx206
+PRODUCT_NAME := twrp_pdx206
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := XQ-AT52
+PRODUCT_MODEL := XQ-AS72
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=XQ-AT52 \
-    TARGET_PRODUCT=XQ-AT52 \
-    PRIVATE_BUILD_DESC="XQ-AT52-user 12 58.2.A.7.93 058002A007009304241360111 release-keys"
+    TARGET_DEVICE=XQ-AS72 \
+    TARGET_PRODUCT=XQ-AS72 \
+    PRIVATE_BUILD_DESC="XQ-AS72-user 12 58.2.A.10.126 058002A010012603718185433 release-keys"
