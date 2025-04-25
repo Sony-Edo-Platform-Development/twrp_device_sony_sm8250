@@ -2,7 +2,6 @@ export TARGET_ARCH="arm64-v8a"
 
 # Some about us
 #export FOX_VARIANT="A12"
-export FOX_VERSION="R12.1"
 export OF_MAINTAINER=ShionKagurazaka
 
 # Screen
